@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# React.js Random Color Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the Project 📚
+This is an upLeveled bootcamp project that challenges me to design and develop a meme generator web application using React. This application allows the user to choose their own meme template from the 10 options provided, they can choose to download the image alone of add some texts on the top and/or bottom of the image. 
 
-## Available Scripts
+## Demo link 🔗
+Access my site at [React Meme Generator](https://react-meme-generator-mo.netlify.app/)
 
-In the project directory, you can run:
+## Screenshot 📷
+<img width="1431" alt="meme-generator" src="https://user-images.githubusercontent.com/121162907/236335625-d82866ef-e882-4dbe-ae02-3af357ab5061.png">
 
-### `npm start`
+## Technologies ⚛️
+I used React to develop this project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup 💻
+- Download or clone the repository
+- Run `pnpm start`
+  - This runs the app in the development mode.
+  - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - The page will reload when you make changes.
+  
+## Approach 🚶🏻‍♀️
+In order for me to develop this porject, I needed to see a visual result and so I resorted to Figma and designed the prototype. I then created a flowchart to give me better understanding of how each interaction should run in my application. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="395" alt="Screenshot 2023-05-04 at 23 48 50" src="https://user-images.githubusercontent.com/121162907/236337383-df7a96f6-d544-4b02-b9ca-77b682d5a1b7.png">
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Credits 📝
+This is the second React project that I did at [upLeveled](https://upleveled.io/) bootcamp as part of the Spring '23 cohort.
