@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #d9d9d9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background-color: #1e1e1e;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0rem 35rem;
+  width: 100vw;
+}
+
+.header > img {
+  height: 190px;
+}
+
+.header > h1 {
+  font-size: 5rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.line {
+  width: 139px;
+  height: 7px;
+  background-color: #1e1e1e;
+  position: absolute;
+  top: 99.8%;
+  left: 28.1%;
+}
+.meme-container {
+  width: 1000px;
+  height: 550px;
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  border: 6px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.text-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  height: 100%;
+}
+
+.image-area {
+  height: 90px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.images {
+  height: 50px;
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+.meme-names {
+  position: absolute;
+  top: 37.5%;
+  left: 18.6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+
+.meme-names > div {
+  display: flex;
+  gap: 3.5px;
+}
+
+.meme-names > div > p {
+  text-align: center;
+  width: 92px;
+  font-size: 10px;
+  background-color: #d9d9d9b2;
+  color: #1e1e1e;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+
+input,
+select {
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  outline: none;
+  color: #1e1e1e;
+  border: none;
+}
+
+input:hover,
+select:hover {
+  background-color: antiquewhite;
+}
+
+.meme-template {
+  height: 90%;
+  width: 40%;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.btn {
+  height: 40px;
+  width: 300px;
+  color: #1e1e1e;
+  cursor: pointer;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.btn:hover {
+  color: #d9d9d9;
+  background-color: transparent;
+}
+
+.btn:active,
+.download:active {
+  transform: translate(0, 10%);
+}
+.download {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding: 7px 30px;
+  color: #d9d9d9;
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.download-icon {
+  font-size: 1rem;
+}
