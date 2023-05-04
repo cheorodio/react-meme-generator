@@ -1,4 +1,4 @@
-# React.js Random Color Generator
+# React.js Meme Generator
 
 ## About the Project 📚
 This is an upLeveled bootcamp project that challenges me to design and develop a meme generator web application using React. This application allows the user to choose their own meme template from the 10 options provided, they can choose to download the image alone of add some texts on the top and/or bottom of the image. 
