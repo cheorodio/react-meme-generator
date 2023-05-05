@@ -22,7 +22,7 @@ I used React to develop this project
 ## Approach 🚶🏻‍♀️
 In order for me to develop this porject, I needed to see a visual result and so I resorted to Figma and designed the prototype. I then created a flowchart to give me better understanding of how each interaction should run in my application. 
 
-<img width="395" alt="Screenshot 2023-05-04 at 23 48 50" src="https://user-images.githubusercontent.com/121162907/236337383-df7a96f6-d544-4b02-b9ca-77b682d5a1b7.png">
+ <img width="608" alt="Screenshot 2023-05-05 at 10 12 08" src="https://user-images.githubusercontent.com/121162907/236408053-9b825ae2-0861-47a7-bab2-e2bc96735bef.png">
 
 
 ## Credits 📝
