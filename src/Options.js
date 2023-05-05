@@ -15,7 +15,7 @@ export default function Options() {
       </div>
       <div className="meme-names">
         <div>
-          <p>aag</p>
+          <p>kermit</p>
           <p>agnes</p>
           <p>bad</p>
           <p>bihw</p>

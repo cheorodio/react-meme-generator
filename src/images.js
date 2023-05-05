@@ -1,4 +1,3 @@
-import aag from './memeImages/aag.jpeg';
 import agnes from './memeImages/agnes.jpeg';
 import bad from './memeImages/bad.jpeg';
 import bihw from './memeImages/bihw.jpeg';
@@ -8,11 +7,12 @@ import cake from './memeImages/cake.jpeg';
 import captain from './memeImages/captain.jpeg';
 import cb from './memeImages/cb.jpeg';
 import doge from './memeImages/doge.jpeg';
+import kermit from './memeImages/kermit.jpeg';
 
 export const memeImages = [
   {
-    detail: 'aag',
-    img: aag,
+    detail: 'kermit',
+    img: kermit,
   },
   {
     detail: 'agnes',

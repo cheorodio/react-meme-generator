@@ -9,7 +9,7 @@ import Options from './Options.js';
 export default function App() {
   const [topText, setTopText] = useState('_');
   const [bottomText, setBottomText] = useState('_');
-  const [meme, setMeme] = useState('cb');
+  const [meme, setMeme] = useState('kermit');
   const [generateMeme, setGenerateMeme] = useState(
     `https://api.memegen.link/images/${meme}/${topText}/${bottomText}.jpg`,
   );
@@ -55,6 +55,7 @@ export default function App() {
                 onChange={(e) => {
                   setTopText(e.target.value);
                 }}
+                {...console.log(topText)}
               />
             </label>
             <label htmlFor="Bottom text">
