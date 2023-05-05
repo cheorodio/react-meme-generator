@@ -7,9 +7,9 @@ import { memeImages } from './images';
 import Options from './Options.js';
 
 export default function App() {
-  const [topText, setTopText] = useState('_');
-  const [bottomText, setBottomText] = useState('_');
   const [meme, setMeme] = useState('kermit');
+  const [topText, setTopText] = useState(' ');
+  const [bottomText, setBottomText] = useState('');
   const [generateMeme, setGenerateMeme] = useState(
     `https://api.memegen.link/images/${meme}/${topText}/${bottomText}.jpg`,
   );
@@ -29,10 +29,11 @@ export default function App() {
   return (
     <div className="container">
       <Header />
+
       <div className="meme-container">
         <div className="text-box">
-          <p>Choose your meme template</p>
           <Options />
+
           <form>
             <label htmlFor="meme">
               Meme Template
@@ -47,21 +48,22 @@ export default function App() {
                 ))}
               </select>
             </label>
+
             <label htmlFor="Top text">
               Top text
               <input
-                placeholder="Top text"
+                // placeholder="Top text"
                 value={topText}
                 onChange={(e) => {
                   setTopText(e.target.value);
                 }}
-                {...console.log(topText)}
               />
             </label>
+
             <label htmlFor="Bottom text">
               Bottom text
               <input
-                placeholder="Bottom text"
+                // placeholder="Bottom text"
                 value={bottomText}
                 onChange={(e) => {
                   setBottomText(e.target.value);

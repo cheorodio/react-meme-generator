@@ -2,7 +2,8 @@ import { memeImages } from './images.js';
 
 export default function Options() {
   return (
-    <>
+    <div>
+      <p>Choose your meme template</p>
       <div className="image-area">
         {memeImages.map((slide) => (
           <img
@@ -29,6 +30,6 @@ export default function Options() {
           <p>doge</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

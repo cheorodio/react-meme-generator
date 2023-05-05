@@ -2,25 +2,11 @@
   "name": "react-meme-generator",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/user-event": "^13.2.1",
-    "@upleveled/react-scripts": "5.0.5",
-    "file-saver": "^2.0.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [
@@ -34,11 +20,21 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@upleveled/react-scripts": "5.0.5",
+    "file-saver": "^2.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0"
+  },
   "devDependencies": {
+    "@jest/globals": "^29.5.0",
     "@types/file-saver": "^2.0.5",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
-    "eslint-config-upleveled": "^4.1.9",
+    "eslint-config-upleveled": "^4.2.0",
     "stylelint": "^15.6.1",
     "stylelint-config-upleveled": "^1.0.2",
     "typescript": "^5.0.4"
