@@ -35,20 +35,6 @@ export default function App() {
           <Options />
 
           <form>
-            <label htmlFor="meme">
-              Meme Template
-              <select
-                value={meme}
-                onChange={(e) => {
-                  setMeme(e.currentTarget.value);
-                }}
-              >
-                {memeImages.map((slide) => (
-                  <option key={`slide-${slide.detail}`}>{slide.detail}</option>
-                ))}
-              </select>
-            </label>
-
             <label htmlFor="Top text">
               Top text
               <br />
@@ -70,6 +56,19 @@ export default function App() {
                   setBottomText(e.target.value);
                 }}
               />
+            </label>
+            <label htmlFor="meme">
+              Meme Template
+              <select
+                value={meme}
+                onChange={(e) => {
+                  setMeme(e.currentTarget.value);
+                }}
+              >
+                {memeImages.map((slide) => (
+                  <option key={`slide-${slide.detail}`}>{slide.detail}</option>
+                ))}
+              </select>
             </label>
 
             <button className="btn" onClick={generate}>
