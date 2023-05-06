@@ -50,6 +50,7 @@ export default function App() {
             </label>
 
             <label htmlFor="Top text">Top text</label>
+            <br />
             <input
               placeholder="Top text"
               value={topText}
@@ -57,7 +58,7 @@ export default function App() {
                 setTopText(e.target.value);
               }}
             />
-
+            <br />
             <label htmlFor="Bottom text">Bottom text</label>
             <input
               placeholder="Bottom text"
