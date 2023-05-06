@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 0rem 35rem;
+  padding: 0rem 64rem;
   width: 100vw;
 }
 
@@ -43,7 +43,7 @@
   background-color: #1e1e1e;
   position: absolute;
   top: 99.8%;
-  left: 28.1%;
+  left: 34.6%;
 }
 .meme-container {
   width: 1000px;
@@ -54,8 +54,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  padding: 1rem;
+  gap: 44px;
+  padding: 16px;
 }
 
 .text-box {
@@ -69,7 +69,7 @@
 .image-area {
   height: 90px;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -92,7 +92,7 @@
 
 .meme-names > div {
   display: flex;
-  gap: 3.5px;
+  gap: 4.2px;
 }
 
 .meme-names > div > p {
@@ -106,7 +106,6 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
   position: relative;
 }
 
@@ -118,6 +117,7 @@ select {
   outline: none;
   color: #1e1e1e;
   border: none;
+  margin-bottom: 20px;
 }
 
 input:hover,
@@ -140,6 +140,7 @@ select:hover {
   border: 3px solid #fff;
   text-transform: uppercase;
   letter-spacing: 1.8px;
+  margin-top: 24px;
 }
 
 .btn:hover {

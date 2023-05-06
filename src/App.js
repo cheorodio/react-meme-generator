@@ -9,7 +9,7 @@ import Options from './Options.js';
 export default function App() {
   const [meme, setMeme] = useState('kermit');
   const [topText, setTopText] = useState(' ');
-  const [bottomText, setBottomText] = useState('');
+  const [bottomText, setBottomText] = useState(' ');
   const [generateMeme, setGenerateMeme] = useState(
     `https://api.memegen.link/images/${meme}/${topText}/${bottomText}.jpg`,
   );
@@ -49,27 +49,24 @@ export default function App() {
               </select>
             </label>
 
-            <label htmlFor="Top text">
-              Top text
-              <input
-                // placeholder="Top text"
-                value={topText}
-                onChange={(e) => {
-                  setTopText(e.target.value);
-                }}
-              />
-            </label>
+            <label htmlFor="Top text">Top text</label>
+            <input
+              placeholder="Top text"
+              value={topText}
+              onChange={(e) => {
+                setTopText(e.target.value);
+              }}
+            />
 
-            <label htmlFor="Bottom text">
-              Bottom text
-              <input
-                // placeholder="Bottom text"
-                value={bottomText}
-                onChange={(e) => {
-                  setBottomText(e.target.value);
-                }}
-              />
-            </label>
+            <label htmlFor="Bottom text">Bottom text</label>
+            <input
+              placeholder="Bottom text"
+              value={bottomText}
+              onChange={(e) => {
+                setBottomText(e.target.value);
+              }}
+            />
+
             <button className="btn" onClick={generate}>
               Generate
             </button>
