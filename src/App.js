@@ -35,6 +35,24 @@ export default function App() {
           <Options />
 
           <form>
+            <label htmlFor="Top text">Top text</label>
+            <input
+              placeholder="Top text"
+              value={topText}
+              onChange={(e) => {
+                setTopText(e.target.value);
+              }}
+            />
+
+            <label htmlFor="Bottom text">Bottom text</label>
+            <input
+              placeholder="Bottom text"
+              value={bottomText}
+              onChange={(e) => {
+                setBottomText(e.target.value);
+              }}
+            />
+
             <label htmlFor="meme">
               Meme Template
               <select
@@ -48,25 +66,6 @@ export default function App() {
                 ))}
               </select>
             </label>
-
-            <label htmlFor="Top text">Top text</label>
-            <br />
-            <input
-              placeholder="Top text"
-              value={topText}
-              onChange={(e) => {
-                setTopText(e.target.value);
-              }}
-            />
-            <br />
-            <label htmlFor="Bottom text">Bottom text</label>
-            <input
-              placeholder="Bottom text"
-              value={bottomText}
-              onChange={(e) => {
-                setBottomText(e.target.value);
-              }}
-            />
 
             <button className="btn" onClick={generate}>
               Generate
