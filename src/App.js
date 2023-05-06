@@ -8,10 +8,10 @@ import Options from './Options.js';
 
 export default function App() {
   const [meme, setMeme] = useState('kermit');
-  const [topText, setTopText] = useState(' ');
-  const [bottomText, setBottomText] = useState(' ');
+  const [topText, setTopText] = useState('');
+  const [bottomText, setBottomText] = useState('');
   const [generateMeme, setGenerateMeme] = useState(
-    `https://api.memegen.link/images/${meme}/${topText}/${bottomText}.jpg`,
+    `https://api.memegen.link/images/kermit.jpg`,
   );
 
   function generate(e) {
@@ -35,28 +35,6 @@ export default function App() {
           <Options />
 
           <form>
-            <label htmlFor="Top text">
-              Top text
-              <br />
-              <input
-                placeholder="Top text"
-                value={topText}
-                onChange={(e) => {
-                  setTopText(e.target.value);
-                }}
-              />
-            </label>
-            <label htmlFor="Bottom text">
-              Bottom text
-              <br />
-              <input
-                placeholder="Bottom text"
-                value={bottomText}
-                onChange={(e) => {
-                  setBottomText(e.target.value);
-                }}
-              />
-            </label>
             <label htmlFor="meme">
               Meme Template
               <select
@@ -69,6 +47,28 @@ export default function App() {
                   <option key={`slide-${slide.detail}`}>{slide.detail}</option>
                 ))}
               </select>
+            </label>
+            <label htmlFor="Top text">
+              Top text
+              <br />
+              <input
+                placeholder="Please enter your top text"
+                value={topText}
+                onChange={(e) => {
+                  setTopText(e.target.value);
+                }}
+              />
+            </label>
+            <label htmlFor="Bottom text">
+              Bottom text
+              <br />
+              <input
+                placeholder="Please enter you bottom text"
+                value={bottomText}
+                onChange={(e) => {
+                  setBottomText(e.target.value);
+                }}
+              />
             </label>
 
             <button className="btn" onClick={generate}>
