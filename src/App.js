@@ -11,14 +11,25 @@ export default function App() {
   const [topText, setTopText] = useState('');
   const [bottomText, setBottomText] = useState('');
   const [generateMeme, setGenerateMeme] = useState(
-    `https://api.memegen.link/images/kermit/such_meme/wow.jpg`,
+    `https://api.memegen.link/images/kermit.jpg`,
   );
 
   function generate(e) {
     e.preventDefault();
-    setGenerateMeme(
-      `https://api.memegen.link/images/${meme}/${topText}/${bottomText}.jpg`,
-    );
+    let memeUrl = `https://api.memegen.link/images/${meme}.jpg`;
+
+    if (topText) {
+      memeUrl = `https://api.memegen.link/images/${meme}/${topText}.jpg`;
+    }
+
+    if (bottomText) {
+      memeUrl = `https://api.memegen.link/images/${meme}/_/${bottomText}.jpg`;
+    }
+
+    if (topText && bottomText) {
+      memeUrl = `https://api.memegen.link/images/${meme}/${topText}/${bottomText}.jpg`;
+    }
+    setGenerateMeme(memeUrl);
   }
 
   const handleClick = () => {
@@ -71,7 +82,11 @@ export default function App() {
               />
             </label>
 
-            <button className="btn" onClick={generate}>
+            <button
+              data-test-id="generate-meme"
+              className="btn"
+              onClick={generate}
+            >
               Generate
             </button>
 
