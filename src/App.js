@@ -48,7 +48,7 @@ export default function App() {
                 ))}
               </select>
             </label>
-            <label htmlFor="Top text">
+            <label>
               Top text
               <br />
               <input
@@ -59,7 +59,7 @@ export default function App() {
                 }}
               />
             </label>
-            <label htmlFor="Bottom text">
+            <label>
               Bottom text
               <br />
               <input
