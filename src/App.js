@@ -59,6 +59,15 @@ export default function App() {
                 ))}
               </select>
             </label>
+            <label className="template-input">
+              <input
+                value={meme}
+                onChange={(e) => {
+                  setMeme(e.currentTarget.value);
+                }}
+              />
+            </label>
+
             <label>
               Top text
               <br />

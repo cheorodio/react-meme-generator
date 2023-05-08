@@ -171,3 +171,8 @@ select:hover {
 .download-icon {
   font-size: 1rem;
 }
+
+.template-input {
+  position: absolute;
+  z-index: -10;
+}
