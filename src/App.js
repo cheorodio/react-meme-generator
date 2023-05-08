@@ -11,7 +11,7 @@ export default function App() {
   const [topText, setTopText] = useState('');
   const [bottomText, setBottomText] = useState('');
   const [generateMeme, setGenerateMeme] = useState(
-    `https://api.memegen.link/images/kermit.jpg`,
+    `https://api.memegen.link/images/kermit/such_meme/wow.jpg`,
   );
 
   function generate(e) {
@@ -35,7 +35,7 @@ export default function App() {
           <Options />
 
           <form>
-            <label htmlFor="meme">
+            <label>
               Meme Template
               <select
                 value={meme}
