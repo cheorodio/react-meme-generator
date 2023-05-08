@@ -47,7 +47,7 @@ export default function App() {
 
           <form>
             <label>
-              Meme Template
+              Meme template
               <select
                 value={meme}
                 onChange={(e) => {
